@@ -1,0 +1,215 @@
+html {
+    font-size: 10px;
+    font-family: 'MuseoModerno', cursive;
+    background: #2d3740;
+  }
+h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 4rem;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background:#1c262f ;
+  }
+  h1 span.blue {
+    color: rgb(4, 210, 247);
+  }
+  h1:hover span.red{
+      color: rgb(4, 210, 247);
+  }
+  h1:hover span.blue{
+      color: white;
+  }
+body {
+    padding: 1rem;
+    background: #1c262f;
+    color: rgb(230, 225, 225);
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+.logo {
+    text-align: center;
+  }
+  
+img {
+    max-width: 80%;
+  }
+  
+form {
+    text-align: center;
+  }
+  
+label {
+    font-size: 1.8rem;
+  }
+  
+input[type='number'] {
+    font-family: inherit;
+    background: rgb(230, 225, 225);
+    width: 80%;
+    margin: 1rem 0;
+    padding: 0.8rem;
+    border:none;
+    font-size: 1.6rem;
+    text-align: center;
+    border-radius: 20px;
+    outline: none;
+  }
+  
+button{
+    font-family: inherit;
+    font-weight: bolder;
+    font-size:1.5rem;
+    border:2px solid white;
+    border-radius:15px;
+    width: 80px;
+    height: 50px;
+    padding:5px;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    transition: .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+}
+button:hover{
+  width:140px;
+  background-color: white;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+  color: #91CCC2;
+  transition:.3s;
+}
+
+button:active{
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+  transition: .05s
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+  }
+  
+li {
+      padding: 1rem 1.5rem;
+      overflow: hidden;
+      text-align: center;
+      border: 1px solid;
+      overflow: hidden;
+      border-radius: 3px;
+      transition: transform .2s;
+    }
+li:hover{
+        border-color:#9dfdf5;
+        color:#91CCC2 ;
+        transform: scale(1.03);
+    }  
+.entriesWrapper {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+  }
+  
+.entriesWrapper h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: lighter;
+  }
+  
+.data {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+  }
+  
+.data div {
+    background: #141c22;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+    padding: 0 1rem;
+    transition: transform .2s
+  }
+.data div:hover {
+      color: #91CCC2;
+      transform: scale(1.03);
+      /* zoom: 101%; */
+  }
+.progress {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.progress h3 {
+    font-size:  1.6rem;
+    font-weight: lighter;
+}
+.progressCircleWrapper {
+    display: flex;
+    justify-content: center;
+}
+#progressCircle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    /* background: conic-gradient(rgb(32, 166, 255) 10%, rgb(55, 250, 146) 100%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#progressCenter {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: #1c262f;
+    
+}
+.weekly {
+    font-size: 1.8rem;
+    display: flex;
+}
+.weekly span {
+
+    align-self: center;
+    font-size: 1.6rem;
+    flex: 1;
+}
+.weekly div{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    flex: 4;
+}
+.weekly input#weeklyEntry {
+    flex: 3;
+    font-size: 1.6rem;
+    
+}
+.weekly button {
+    flex: 1;
+    margin: 10px;
+    border: none;
+}
+.weekly button:hover {
+    background:#9dfdf5 ;
+    color: #1c262f;
+}
+
+
+@media screen and (min-width: 800px) {
+    body {
+      width: 60%;
+    }
+  
+    svg {
+      max-width: 50%;
+    }
+  
+    input[type='number'] {
+      width: 40%;
+    }
+}
+  /* ------------------------------------------------- */
