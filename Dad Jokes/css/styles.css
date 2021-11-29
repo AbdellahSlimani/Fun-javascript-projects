@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 :root {
     --blue:#09ACFE;
     --red: #CD086F;
@@ -7,16 +7,16 @@
     --background-1:#121212;
     --background-2:#000000;
 }
-html {
+/* html {
     font-size: 10px;
     color:var(--white);
     font-family: 'Montserrat', sans-serif;
-}
+} */
 * {
     box-sizing: border-box;
 }
 body{
-    background
+    background-color: #686de0;
     font-family: 'Muli  ', sans-serif;
     display: flex;
     align-items: center;
@@ -26,6 +26,44 @@ body{
     margin: 0;
 }
 .container {
-    display: flex;
-    width: 90vw;
-} */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 
+    0 10px 20px rgba(0, 0, 0, 0.1),
+    0 6px 6px rgba(0, 0, 0, 0.1);
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 100%;
+    width: 800px;
+}
+
+h3 {
+    margin: 0;
+    opacity: 0.5;
+    letter-spacing: 2px;
+}
+.joke {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.btn {
+    background-color: #9f68e0;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 
+    0 5px 15px rgba(0, 0, 0, 0.1),
+    0 6px 6px rgba(0, 0, 0, 0.1);
+    padding: 14px 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
