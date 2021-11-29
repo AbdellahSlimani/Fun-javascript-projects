@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+:root {
+    --blue:#09ACFE;
+    --red: #CD086F;
+    --white: #e0e0e0;
+    --yellow:#FFD257;
+    --background-1:#121212;
+    --background-2:#000000;
+}
+html {
+    font-size: 10px;
+    color:var(--white);
+    font-family: 'Montserrat', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(45deg, var(--blue), var(--red));
+    font-family: 'Muli ', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.search {
+    position: relative;
+    height: 5rem;
+}
+.search .input  {
+    background-color: #fff;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    padding:1.5rem;
+    height: 5rem;
+    width:5rem;
+    box-shadow: 0.7rem 0.9rem 0.75rem hsl(0, 15%, 85%) ;
+    transition: width 0.3s ease;
+}
+.search .input::-webkit-search-decoration,
+.search .input::-webkit-search-cancel-button {
+	display: none; /* remove the search and cancel icon */
+}
+.btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 1rem;
+    font-size: 2.4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    width:5rem;
+    box-shadow: 0.7rem 0.9rem 0.75rem hsl(0, 15%, 85%) ;
+    transition: transform 0.3s ease;
+}
+.btn:focus, input:focus {
+    outline: none;
+}
+input:focus{
+    width: 130px;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+}
+.search.active .input {
+    border-radius:  1rem 0 0 1rem;
+    width: 20rem;
+}
+.search.active .btn {
+    border-radius: 0 1rem 1rem 0;
+    transform: translateX(19.57rem);
+}
