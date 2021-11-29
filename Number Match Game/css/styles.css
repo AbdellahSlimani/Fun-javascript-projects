@@ -1,0 +1,324 @@
+:root {
+    --blue:#09ACFE;
+    --red: #CD086F;
+    --white: #e0e0e0;
+    --yellow:#FFD257;
+    --background-1:#121212;
+    --background-2:#000000;
+
+}
+html {
+    font-size: 10px;
+    color:var(--white);
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    width: 90%;
+    margin: 0 auto;
+    background:url(../css/img/Deep\ Space.png);
+    background-position-x: 28%;
+}
+#game-area {
+    font-size: 1.6rem;
+    padding-top: 3rem;
+
+}
+.imageArea, .stats {
+    min-height: 30hv;
+}
+.imageArea {
+    background: var(--background-2);
+    border-radius: 0 0 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    z-index: 1
+}
+h1{
+    font-family: 'Rampart One', cursive;
+    font-size: 4rem;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem .625rem;
+    line-height: normal;
+}
+h1 span{
+    font-size: 3rem;
+}
+h3{
+    margin-top: 0;
+    font-size: 2rem;
+    text-align: center; 
+}
+.items {
+    font-size: 2rem;
+}
+button#match, 
+button#noMatch,
+button#play-button {
+    position: relative;
+    color: var(--white);
+    width: 8rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid var(--blue);
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    text-shadow: 0 0 0.5rem var(--white);
+    box-shadow: inset 0 0 0.7rem 0 var(--blue),
+    0 0 0.7rem 0 var(--blue);
+}
+button#match::before, 
+button#play-button::before{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--blue);
+    top: 130%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.25);
+    filter: blur(4em);
+    opacity: 0.7;
+}
+button#match::after, 
+button#play-button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--blue); 
+    opacity: 0;
+    background-color:var(--blue) ;
+    transition: opacity 100ms linear;
+    z-index: -1;
+}
+
+button#match:hover,
+button#play-button:hover,
+button#match:focus,
+button#play-button:focus {
+    background: var(--blue);
+    text-shadow: none;
+    color:var(--background-2);
+
+}
+button#match:hover::after, 
+button#play-button:hover:after,
+button#match:focus::after, 
+button#play-button:focus:after{
+    opacity: 1;
+}
+button#match:hover::before, 
+button#play-button:hover::before,
+button#match:focus::before, 
+button#play-button:focus::before{
+    opacity: 1;
+}
+/*--------------------No Match button------------------- */
+
+button#noMatch {
+    border: 2px solid var(--red);
+    box-shadow: inset 0 0 0.7rem 0 var(--red),
+    0 0 0.7rem 0 var(--red);
+}
+button#noMatch::before{
+    content: "";
+    position: absolute;
+    background: var(--red);
+    top: 130%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.25);
+    filter: blur(4em);
+    opacity: 0.7;
+}
+button#noMatch::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 1.5em 0.5em var(--red); 
+    opacity: 0;
+    background-color:var(--red) ;
+    z-index: -1;
+    transition: opacity 100ms linear;
+}
+button#noMatch:focus,
+button#noMatch:hover{
+    background: var(--red);
+    text-shadow: none;
+    color:var(--background-2);
+}
+button#noMatch:hover::before,
+button#noMatch:focus::before {
+    opacity: 1;
+}
+button#noMatch:hover::after,
+button#noMatch:focus::after {
+    opacity: 1;
+}
+.stats{
+    background: var(--background-1);
+    border: 2px solid #A500BE;
+    border-radius: 3rem 3rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    text-align: center;
+    z-index: 1;
+}
+.space-y {
+    margin: 3rem 0;
+}
+img {
+    border: 2px solid #0D002C;
+    width: 100%;
+    border-radius: 3rem;
+}
+#newGame{
+    color: var(--white);
+    position: relative;
+    display: none;
+    padding: 1.5rem 3rem;
+    background: transparent;
+    text-decoration: none;
+    align-self: center;
+    overflow: hidden;
+    transition:0.2s;
+    border: var(--yellow) 2px solid;
+    border-radius: 0.5rem;
+    margin-top: 3rem;
+
+}
+#newGame::before{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--yellow);
+    top: 130%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.25);
+    filter: blur(1em);
+    opacity: 0.7;
+}
+#newGame:hover{
+    border: none;
+    color: var(--background-2);
+    background: var(--yellow);
+    box-shadow: 0 0 1rem var(--yellow), 0 0 2rem var(--yellow), 0 0 4rem var(--yellow);
+    transition-delay: 1s;
+}
+#newGame:hover::before{
+    opacity: 1;
+}    
+#newGame span {
+    position: absolute;
+    display: block;
+}
+#newGame span:nth-child(1) {
+    
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(90deg, transparent,var(--yellow));
+}
+#newGame:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+#newGame span:nth-child(2) {
+    top:-100%;
+    right: 0;
+    width: 0.2rem;
+    height: 100%;
+    background: linear-gradient(180deg, transparent,var(--yellow));
+}
+#newGame:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#newGame span:nth-child(3) {
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(270deg, transparent,var(--yellow));
+}
+#newGame:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#newGame span:nth-child(4) {
+    bottom:-100%;
+    left:0;
+    width: 0.2rem;
+    height: 100%;
+    background: linear-gradient(360deg, transparent,var(--yellow));
+}
+#newGame:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+#statsContent{
+    display: none;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 1s;
+}
+progress{
+    margin-top: 10rem;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+
+@media all and (min-width: 600px){
+    #game-area{
+        display: flex;
+
+    }
+    .imageArea, .stats {
+        min-height: 50rem;
+    }
+    .imageArea{
+        border-radius: 3rem;
+        transform:  translate(-3rem);
+        flex: 2;
+    }
+    .stats{
+        flex: 1;
+        border-radius: 3rem 0 0 3rem;
+        margin-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+

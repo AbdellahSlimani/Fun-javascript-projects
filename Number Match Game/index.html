@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Number Match Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <main id="game-area">
+      <div class="stats">
+        <div id="statsContent">
+          <h3>
+            Score: <span id="currentScore"></span> /
+            <span id="totalAvailable"></span>
+          </h3>
+
+          <p class="items">
+            <span id="number"></span> <span id="item-name">  </span>
+          </p>
+          <div class="match-buttons">
+            <button id="match" onclick="match()">&#10003;</button>
+            <button id="noMatch" onclick="noMatch()">&#10007;</button>
+          </div>
+          <progress value="3" max="3" id="pageBeginCountdown"></progress>
+          </div>
+        </div>
+      </div>
+      <div class="imageArea">
+        <h3 id="message"></h3>
+        <button id="newGame" onclick="newGame()">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          New Game</button>
+        <div id="startScreen">
+          <h1>Number Match <br><span>Game!</span></h1>
+          <em class="space-y">The rules are simple. </em>
+          <p class="space-y">
+            &#9654; Hit thumbs up if the number of items on the image matches
+            the displayed number.
+          </p>
+          <p class="space-y">&#9654; Thumbs down if no match!</p>
+          <p class="space-y">
+            You have <span id="timeSetting"></span> seconds to decide.
+          </p>
+        </div>
+        <button id="play-button" onclick="play()">
+          PLAY
+        </button>
+        <div id="imageContainer"></div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
