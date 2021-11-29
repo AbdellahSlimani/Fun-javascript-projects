@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running tracker</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;600&display=swap"
+    rel="stylesheet"/>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="init()">
+    <main>
+        <h1 id="gameMode"></h1>
+        <hr>
+        <div id="welcomeScreen">
+            <h1>Guess The Number</h1>
+            <h2>Between 1-100</h2>
+            <section>
+                <p>Select Difficulity Setting</p>
+                <div class="button-wrapper">
+                    <button onclick="easyMode()">Easy: 10 attempts</button>
+                    <button onclick="hardMode()">Hard: 5 attempts</button>
+                </div>
+            </section>
+        </div>
+        <div id="gameArea">
+            <section>
+                <h3 id="textOutput">Your Guess</h3>
+                <input type="number" id="inputBox" min="1" max="100" onchange="compareGuess()"><br>
+                <button type="submit" id="guessButton" onchange="compareGuess()" min=1>Check</button>        
+            </section>
+            <section>
+                <p>Current range</p>
+                <span id="rangeOutput">1-100</span>
+                <div id="range">
+                    <span id="low"></span>
+                    <span id="space"></span>
+                    <span id="high"></span>
+                </div>
+            </section>
+            <section class="stats">
+                <div class="info">
+                    <p>Number of previous attempts</p>
+                    <span id="attempts">0</span>
+                </div>
+                <div class="info">
+                    <p>Your previous guesses</p>
+                    <span id="guesses">-</span>
+                </div>
+            </section>
+            <button id="newGameButton" onclick="newGame()">NEW GAME</button>
+        </div>
+    </main>
+    
+<!--     <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajax-utils.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/script.js"></script>
+</body>
+</html>

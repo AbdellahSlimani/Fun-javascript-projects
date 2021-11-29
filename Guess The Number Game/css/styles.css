@@ -1,0 +1,194 @@
+:root{
+    --green:#83e1d0;
+    --red: #ef7b54;
+    --background:#f8f1d9;
+    --gradient-1:#343e63;
+    --gradient-2:#2a3352;
+}
+html{
+    font-size: 10px;
+    font-weight: 300;
+}
+body{
+    width: 90%;
+    margin: 0 auto;
+    background:url(../img/space.png);
+} 
+hr {
+    border: 2px solid ;
+    border-radius: 15px;
+}
+h1 {
+    font-family:'MuseoModerno', cursive;
+    font-size: 3rem;
+    color: #102231;
+    text-shadow: 0 0.145rem 0 #503d69;
+    text-align: center;
+    padding: 1rem .625rem;
+    margin: 0;
+    line-height: normal;
+}
+#welcomeScreen h1 {
+    font-family:'MuseoModerno', cursive;
+    font-size: 4rem;
+    color: #102231;
+    text-shadow: 0 0.145rem 0 #503d69;
+    text-align: center;
+    padding: 1rem .625rem;
+    margin: 0;
+    line-height: normal;
+}
+main{
+    text-align: center;
+    background: var(--background);
+    border:solid var(--red);
+    border-width: 0 8px 8px 8px;
+    min-height: 80vh;
+    border-radius: 0 0 3rem 3rem;
+    padding: 1rem;
+    color: #1f2933;
+}
+p{
+    font-size: 1.8rem;
+}
+.button-wrapper{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.button-wrapper button{
+    border: none;
+    cursor: pointer;
+    background:var(--green);
+    padding: 2rem;
+    border-radius: 1rem 1rem 0 0;
+    transition: transform;
+}
+.button-wrapper button:nth-child(2){
+    background: var(--red);
+    border-radius: 0 0 1rem 1rem;
+    transition: transform;
+}
+.button-wrapper button:hover{
+    transform: scale(1.015);
+}
+h3 {
+    font-size: 2rem;
+}
+input{
+    border: 1px solid lightgray;
+    background: transparent;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    width: 16rem;
+    text-align: center;
+}
+#range{
+    display: flex;
+    background: var(--green);
+    border-radius: 5px;
+    height: 50px;
+    padding: 0;
+    margin: 0 0 4rem 0;
+}
+#rangeOutput{
+    font-size: 1.6rem;
+}
+.stats {
+    text-align: left;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info span {
+    font-size: 1.6rem;
+}
+#newGameButton{
+    background-color: #9dfdf5;
+    font-family: inherit;
+    font-weight: bolder;
+    font-size:1.5rem;
+    border: none;
+    border-radius:15px;
+    width: 110px;
+    height: 50px;
+    padding:5px;
+    margin: 3rem;
+    transition: .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+}
+#newGameButton:hover{
+  width:140px;
+  background-color: white;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+  color: #91CCC2;
+  transition:.3s;
+}
+
+#newGameButton:active{
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+  transition: .05s
+}
+#inputButton{
+    margin: 0 3rem 0 3rem;
+    justify-content: space-between;
+    
+}
+#inputBox {
+    margin: 1rem;
+    outline:none;
+    border-radius: 5px;
+align-self: center;
+}
+#guessButton {
+    margin: 1rem;
+    align-self: left;
+}
+#guessButton {
+    background-color: #9dfdf5;
+    font-family: inherit;
+    font-weight: bolder;
+    font-size:1.5rem;
+    border: none;
+    outline:none;
+    border-radius:7px;
+    width: 70px;
+    height: 32px;
+    padding:5px;
+    margin-bottom: 0.rem;
+    align-self: center;
+    transition: .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+#guessButton:hover{
+    width:140px;
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+    color: #91CCC2;
+    transition:.3s;
+}
+#guessButton:active{
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    transition: .05s
+}
+.falsh{
+    animation: flash 1s infinite;
+}
+@keyframes falsh {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media  (min-width: 800px){
+    body {
+        width: 60vw;
+    }
+}
