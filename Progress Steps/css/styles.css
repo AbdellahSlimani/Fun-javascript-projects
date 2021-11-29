@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+:root {
+    --blue:#09ACFE;
+    --red: #CD086F;
+    --white: #e0e0e0;
+    --yellow:#FFD257;
+    --background-1:#121212;
+    --background-2:#000000;
+}
+html{
+    font-size: 10px;
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    background: var(--background-2);
+    font-family: 'Muli  ', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.container {
+    text-align: center;
+}
+.progress-container {
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 3rem;
+    max-width: 100%;
+    width: 34.5rem;
+}
+.progress-container::before {
+    content: "";
+    background: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY();
+    height: 0.4rem;
+    width: 100%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+.progress {
+    background: var(--blue);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY();
+    height: 0.4rem;
+    width: 0%;
+    z-index: -1;
+    transition: 0.4s ease;
+    box-shadow: inset 0 0 0.7rem 0 var(--blue),
+    0 0 0.7rem 0 var(--blue);
+}
+.circle {
+    background-color: #fff;
+    color: #999;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.3rem solid var(--white);
+    transition: .4s ease;
+}
+.circle.active {
+    border-color: var(--blue);
+    box-shadow: 0 0 .8rem var(--blue);
+}
+.btn:active{
+    transform: scale(0.98);
+}
+.btn:focus{
+    outline: none;
+}
+/* ----------------- general button---------------- */
+.btn{
+    position: relative;
+    color:var(--white);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.4rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background: transparent;
+    border: 2px solid var(--blue);
+    margin-left: 2rem;
+    text-shadow: 0 0 0.7rem var(--white);
+    box-shadow: inset 0 0 0.7rem 0 var(--blue),
+    0 0 0.7rem 0 var(--blue);
+}
+.btn:hover{
+    background: var(--blue);
+    text-shadow: none;
+    color:var(--background-2);
+}
+/* -------------------- before button------------------ */
+.btn::before{
+    background-color: var(--blue);
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--blue);
+    top: 130%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.25);
+    filter: blur(3em);
+    opacity: 0.7;
+}
+.btn:disabled:hover::before,
+.btn:disabled:focus::before, 
+.btn:hover::before,
+.btn:focus::before {
+    opacity: 1;
+}
+.btn:disabled::before{
+    background-color: var(--white);
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--white);
+    top: 130%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1.25, 0.25);
+    filter: blur(3em);
+    opacity: 0.7;
+}
+/* --------------------After button----------------------- */
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.01em var(--blue); 
+    opacity: 0;
+    background-color:var(--blue) ;
+    transition: opacity 100ms linear;
+    z-index: -1;
+}
+
+.btn:focus::after,
+.btn:hover::after{
+    opacity: 1;
+}
+
+.btn:disabled::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.01em var(--white); 
+    opacity: 0;
+    background-color:var(--white) ;
+    transition: opacity 100ms linear;
+    z-index: -1;
+}
+
+.btn:disabled:hover::after {
+    opacity: 1;
+}
+
+
+/* ------------------disabled button------------------- */
+
+.btn:disabled {
+    color: var(--white);
+    cursor: not-allowed;
+    border: 2px solid var(--white);
+    text-shadow: 0 0 0.7rem var(--white);
+    box-shadow: inset 0 0 0.7rem 0 var(--white),
+    0 0 0.7rem 0 var(--white);
+}
+.btn:disabled:hover{
+    background: var(--white);
+    text-shadow: none;
+    color:var(--background-2);
+}
