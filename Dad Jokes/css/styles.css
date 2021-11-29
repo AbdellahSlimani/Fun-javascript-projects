@@ -1,0 +1,31 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+:root {
+    --blue:#09ACFE;
+    --red: #CD086F;
+    --white: #e0e0e0;
+    --yellow:#FFD257;
+    --background-1:#121212;
+    --background-2:#000000;
+}
+html {
+    font-size: 10px;
+    color:var(--white);
+    font-family: 'Montserrat', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    background
+    font-family: 'Muli  ', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.container {
+    display: flex;
+    width: 90vw;
+} */
