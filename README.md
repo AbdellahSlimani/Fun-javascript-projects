@@ -3,7 +3,6 @@ This repo contains completed code samples and assets for <a href='https://github
 Outputs :<br>
 <a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Guess%20The%20Number%20Game/index.html' target="_blank">Guess The Number Game</a>.<br>
 <a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Number%20Match%20Game/index.html' target="_blank">Number Match Game!</a>.<br>
-<a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Number%20Match%20Game/index.html' target="_blank">Number Match Game!</a>.<br>
 <a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Blurry%20Loading/index.html' target="_blank">Blurry Loading</a>.<br>
 <a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Dad%20Jokes/index.html' target="_blank">Dad Jokes</a>.<br>
 <a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Expanding%20Cards%20project/index.html' target="_blank">Expanding Cards</a>.<br>
