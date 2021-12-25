@@ -16,5 +16,7 @@ Outputs :<br>
 <a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Split%20Landing%20Page/index.html' target="_blank">Split Landing Page</a>.<br>
 <a href='https://slimani-abdellah.github.io/Fun-javascript-projects/event-keycodes/index.html' target="_blank">Event KeyCodes</a>.<br>
 <a href='https://slimani-abdellah.github.io/Fun-javascript-projects/tip%20calculator/index.html' target="_blank">Tip Calculator</a>.<br>
+<a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Random%20choice%20picker/index.html' target="_blank">Random choice picker</a>.<br>
+
 
 
