@@ -1,7 +1,15 @@
 const tagsEl = document.getElementById('tags')
 const textarea = document.getElementById('textarea')
+const Rbtn = document.getElementById('Rbtn')
 
 textarea.focus()
+function ranButton() {
+    setTimeout(() => {
+        textarea.value = ''
+    }, 10)
+
+    randomSelect()
+}
 
 textarea.addEventListener('keyup', (e) => {
     createTags(e.target.value)
@@ -14,6 +22,8 @@ textarea.addEventListener('keyup', (e) => {
         randomSelect()
     }
 })
+
+
 
 function createTags(input) {
     const tags = input.split(',').filter(tag => tag.trim() !== '').map(tag => tag.trim())

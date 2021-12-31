@@ -12,10 +12,15 @@
     <h3>Enter all of the choices divided by a comma(,)
     <br>Press enter when you're done
     </h3>
-    <textarea placeholder="Enter choices here..." id="textarea"></textarea>
+    <div class="actionBox">
+      <textarea placeholder="Enter choices here..." id="textarea"></textarea>
+      <button id="Rbtn" class="shakeme" onclick="ranButton()"><ion-icon  name="shuffle-outline"></ion-icon></button>
+  </div>
   </div>
   <div id="tags">
   </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
