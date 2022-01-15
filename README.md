@@ -19,7 +19,7 @@ Outputs :<br>
 <a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Random%20choice%20picker/index.html' target="_blank">Random choice picker</a>.<br>
 <a href='https://slimani-abdellah.github.io/Fun-javascript-projects/FAQ-Boxes/index.html' target="_blank">FAQ Boxes</a>.<br>
 <a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Theme%20Clock/index.html' target="_blank">Theme Clock</a>.<br>
-<a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Random%20choice%20picker/index.html' target="_blank"></a>.<br>
+<a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Drink%20Water/index.html' target="_blank">Drink Water</a>.<br>
 <a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Random%20choice%20picker/index.html' target="_blank"></a>.<br>
 
 
