@@ -2,6 +2,9 @@ const smallCups = document.querySelectorAll('.cup-small')
 const liters = document.getElementById('liters')
 const percentage = document.getElementById('percentage')
 const remained = document.getElementById('remained')
+const bInnerHeight = Number(document.querySelector('.bottle_inner').offsetHeight)
+
+console.log(bInnerHeight)
 
 updateBigCup()
 
@@ -37,7 +40,7 @@ function updateBigCup() {
         percentage.style.height = 0
     } else {
         percentage.style.visibility = 'visible'
-        percentage.style.height = `${fullCups / totalCups * 330}px`
+        percentage.style.height = `${fullCups / totalCups * bInnerHeight}px`
         percentage.innerText = `${fullCups / totalCups * 100}%`
     }
 

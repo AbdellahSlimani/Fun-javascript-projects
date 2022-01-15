@@ -1,110 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&dispaly=swap');
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 :root {
   --border-color: #144fc6;
   --fill-color: #6ab3f8;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body 
-{
-  background-color: #3494e4;
-  color: #fff;
-  font-family:'Montserrat', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-h1 {
-  margin: 10px 0 0;
-}
-
-h3{
-  font-weight: 400;
-  margin: 10px 0;
-}
-
-.cup {
-  background-color: #fff;
-  border: 4px solid var(--border-color);
-  color: var(--border-color);
-  border-radius: 0 0 40px 40px;
-  height: 330px;
-  width: 150px;
-  margin: 30px 0;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.cup.cup-small {
-  width: 50px;
-  height: 95px;
-  border-radius: 0 0 15px 15px;
-  background-color: rgba(255, 255, 255, 0.9);
-  cursor: pointer;
-  font-size: 14px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 5px;
-  transition: 0.3s ease
-}
-
-.cup.cup-small.full {
-  background-color: var(--fill-color);
-  color: #fff;
-}
-
-.cups {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 250px;
-}
-
-.remained {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center;
-  text-align: center;
-  flex: 1;
-  transition: 0.3s ease;
-}
-
-.remained span {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.remained small {
-  font-size: 12px;
-}
-
-.text {
-  text-align: center;
-  margin: 0 0 5px;
-}
-
-/* ========================= */
-/* @import "compass/css3"; */
-
-/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700); */
-
-
 :before, :after {
   content: '';
   display: block;
   position: absolute;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
@@ -123,8 +35,16 @@ body {
   margin-bottom: 40px;
 }
 
+h1 {
+  margin: 10px 0 0;
+}
+
+h3{
+  font-weight: 400;
+  margin: 10px 0;
+}
+
 .bottle {
-  /* display: inline-block; */
   position: relative;
   height: auto;
   width: 150px;
@@ -249,7 +169,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.04);
   border-top: none;
   border-bottom: none;
-  background: linear-gradient(left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 5%, rgba(255, 255, 255, 0) 95%, rgba(255, 255, 255, 0.3));
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 5%, rgba(255, 255, 255, 0) 95%, rgba(255, 255, 255, 0.3));
   box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.3);
 }
 
@@ -265,6 +185,8 @@ body {
 }
 
 .bottle_inner {
+  display: flex;
+  flex-direction: column;
   height: 329px;
   width: 92%;
   margin: 0px auto;
@@ -274,7 +196,6 @@ body {
   border-bottom-width: 0.5px;
   position: relative;
   box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5) inset, 0px 0px 8px rgba(255, 255, 255, 0.6) inset, 0px 0px 5px rgba(255, 255, 255, 0.5);
-  position: relative;
   top: 1px;
 }
 
@@ -286,6 +207,29 @@ body {
   height: 9px;
 }
 
+.bottle_inner .remained {
+  display: flex;
+  flex: 1;
+  align-items: center; 
+  justify-content: center;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.bottle_inner .remained span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bottle_inner .remained small {
+  font-size: 12px;
+}
+
+.text {
+  text-align: center;
+  margin: 0 0 5px;
+}
+
 .bottle_top .highlight {
   display: block;
   height: 30px;
@@ -294,7 +238,7 @@ body {
   left: 5px;
   top: 5px;
   transform: skew(0deg, 5deg);
-  background: linear-gradient(left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.6) 4%, rgba(255, 255, 255, 0.2) 98%, rgba(255, 255, 255, 0));
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.6) 4%, rgba(255, 255, 255, 0.2) 98%, rgba(255, 255, 255, 0));
 }
 
 .bottle_top .highlight:after {
@@ -308,13 +252,13 @@ body {
 
 .bottle_main .highlight {
   display: block;
-  height: 150px;
+  height: 329px;
   width: 25px;
   position: absolute;
   left: 10px;
   top: 6px;
   transform: skew(0deg, 6deg);
-  background: linear-gradient(left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5) 4%, rgba(255, 255, 255, 0.2) 98%, rgba(255, 255, 255, 0));
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5) 4%, rgba(255, 255, 255, 0.2) 98%, rgba(255, 255, 255, 0));
   z-index: 2;
 }
 
@@ -324,7 +268,7 @@ body {
   left: -6px;
   top: 0px;
   transform: skew(0deg, 3deg);
-  background: linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 80%);
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 80%);
 }
 
 .bottle_neck .highlight {
@@ -335,22 +279,37 @@ body {
   left: 2px;
   top: 6px;
   transform: skew(0deg, 6deg);
-  background: linear-gradient(left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3) 4%, rgba(255, 255, 255, 0.1) 98%, rgba(255, 255, 255, 0));
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3) 4%, rgba(255, 255, 255, 0.1) 98%, rgba(255, 255, 255, 0));
 }
 
 .water {
-  background: linear-gradient(-85deg, rgba(0, 204, 255, 0.35), rgba(0, 173, 216, 0.55) 70%, rgba(0, 173, 216, 0.4));
-  width: 98%;
   display:flex;
   align-items: center;
   justify-content: center;
+  font-size: 30px;
+  width: 98%;
+  height: 0;
   font-weight:bold;
+  box-sizing: border-box;
   position: absolute;
   left: 1px;
   bottom: 1px;
+  transition: 0.3s ease;
+  background: linear-gradient(-85deg, rgba(0, 204, 255, 0.35), rgba(0, 173, 216, 0.55) 70%, rgba(0, 173, 216, 0.4));
   border-radius: 50px 50px 20px 20px/8px 8px 10px 10px;
   box-shadow: 0px 0px 6px rgba(0, 204, 255, 0.5) inset, 0px 0.2px 3px -1px rgba(0, 0, 0, 0.3) inset, 0px 2px 6px -1px rgba(0, 0, 0, 0.1) inset, 0px 2px 5px rgba(0, 204, 255, 0.3), 0px 1px 3px rgba(0, 204, 255, 0.2);
 }
+
+/* .percentage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  height: 0;
+  transition: 0.3s ease;
+  flex: 1;
+} */
 
 .water:after {
   height: 10px;
@@ -374,13 +333,43 @@ body {
   box-shadow: 0px -2px 3px -1px rgba(0, 204, 255, 0.25);
 }
 
-/* .percentage {
-  background-color: var(--fill-color);
-  display:flex;
+
+.cup {
+  background-color: #fff;
+  border: 4px solid var(--border-color);
+  color: var(--border-color);
+  border-radius: 0 0 40px 40px;
+  height: 330px;
+  width: 150px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cup.cup-small {
+  width: 50px;
+  height: 95px;
+  border-radius: 0 0 15px 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-size: 14px;
   align-items: center;
   justify-content: center;
-  font-weight:bold;
-  font-size: 30px;
-  height: 0;
-  transition: 0.3s ease;
-} */
+  text-align: center;
+  margin: 5px;
+  transition: 0.3s ease
+}
+
+.cup.cup-small.full {
+  background-color: var(--fill-color);
+  color: #fff;
+}
+
+.cups {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+}
