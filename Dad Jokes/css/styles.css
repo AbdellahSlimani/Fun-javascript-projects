@@ -7,11 +7,6 @@
     --background-1:#121212;
     --background-2:#000000;
 }
-/* html {
-    font-size: 10px;
-    color:var(--white);
-    font-family: 'Montserrat', sans-serif;
-} */
 * {
     box-sizing: border-box;
 }
