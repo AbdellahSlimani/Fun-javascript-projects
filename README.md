@@ -20,7 +20,12 @@ Outputs :<br>
 <a href='https://slimani-abdellah.github.io/Fun-javascript-projects/FAQ-Boxes/index.html' target="_blank">FAQ Boxes</a>.<br>
 <a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Theme%20Clock/index.html' target="_blank">Theme Clock</a>.<br>
 <a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Drink%20Water/index.html' target="_blank">Drink Water</a>.<br>
+<a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Button%20Ripple%20Effect/index.html' target="_blank">Button Ripple Effect</a>.<br>
+<a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Drag%20N%20Drop/index.html' target="_blank">Drag N Drop</a>.<br>
+<a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Calculator/index.html' target="_blank">Calculator</a>.<br>
 <a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Random%20choice%20picker/index.html' target="_blank"></a>.<br>
+<a href='https://slimani-abdellah.github.io/Fun-javascript-projects/Random%20choice%20picker/index.html' target="_blank"></a>.<br>
+
 
 
 
