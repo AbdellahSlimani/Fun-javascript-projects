@@ -10,17 +10,33 @@ const animated_bg_texts = document.querySelectorAll('.animated-bg-text')
 
 setTimeout(getData, 2500)
 
-function getData() {
+async function getData() {
+
+  const config = {
+    headers :{
+      Accept : 'application/json'
+    },
+  }
+  
+  const res = await fetch('https://type.fit/api/quotes', config)
+  const data = await res.json()
+
+  const rndNum = Math.floor(Math.random() * 1643)
+  const authorName = data[rndNum].author
+  
+
+
+
   header.innerHTML =
-    '<img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80" alt="" />'
-  title.innerHTML = 'Lorem ipsum dolor sit amet'
-  excerpt.innerHTML =
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perferendis'
+    '<img src="https://images.unsplash.com/photo-1494959764136-6be9eb3c261e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />'
+  title.innerHTML = 'Inspirational Quotes'
+  excerpt.innerHTML = data[rndNum].text
   profile_img.innerHTML =
-    '<img src="https://randomuser.me/api/portraits/men/45.jpg" alt="" />'
-  name.innerHTML = 'John Doe'
-  date.innerHTML = 'Oct 08, 2020'
+    '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQMyqAi1gpIOnCwNYAGF2MHs2SoUwrbNTlAeDyFSqAsgYyhQF3MxHnhOOSHkxhVck1D0&usqp=CAU" alt="" />'
+  name.innerHTML = authorName
+  date.innerHTML = new Date().toLocaleString().replaceAll("/", "·")
 
   animated_bgs.forEach((bg) => bg.classList.remove('animated-bg'))
   animated_bg_texts.forEach((bg) => bg.classList.remove('animated-bg-text'))
 }
+
