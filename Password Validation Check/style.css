@@ -1,1 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #8cccff;
+}
+
+.box {
+  position: relative;
+  width: 300px;
+}
+
+.box .inputBox {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.box .inputBox input {
+  position: relative;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px 5px ;
+}
+
+.box .inputBox #toggleBtn {
+  position: absolute;
+  top: 8px ;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .inputBox #toggleBtn::before {
+  content: '\f06e';
+  font-family: fontAwesome;
+}
