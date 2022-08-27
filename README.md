@@ -24,7 +24,7 @@ Outputs :<br>
 <a href='https://abdellahslimani.github.io/Fun-javascript-projects/Drag%20N%20Drop/index.html' target="_blank">Drag N Drop</a>.<br>
 <a href='https://abdellahslimani.github.io/Fun-javascript-projects/Calculator/index.html' target="_blank">Calculator</a>.<br>
 <a href='https://abdellahslimani.github.io/Fun-javascript-projects/Contend%20Placeholder/index.html' target="_blank">Contend Placeholder</a>.<br>
-<a href='https://abdellahslimani.github.io/Fun-javascript-projects/Random%20choice%20picker/index.html' target="_blank"></a>.<br>
+<a href='https://abdellahslimani.github.io/Fun-javascript-projects//Password%20Validation%20Check/index.html' target="_blank">Password Validation</a>.<br>
 
 
 
