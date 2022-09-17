@@ -25,9 +25,4 @@ Outputs :<br>
 <a href='https://abdellahslimani.github.io/Fun-javascript-projects/Calculator/index.html' target="_blank">Calculator</a>.<br>
 <a href='https://abdellahslimani.github.io/Fun-javascript-projects/Contend%20Placeholder/index.html' target="_blank">Contend Placeholder</a>.<br>
 <a href='https://abdellahslimani.github.io/Fun-javascript-projects//Password%20Validation%20Check/index.html' target="_blank">Password Validation</a>.<br>
-
-
-
-
-
-
+<a href='https://abdellahslimani.github.io/Fun-javascript-projects//Testimonial%20Box/index.html' target="_blank">Testimonial Box</a>.<br>
