@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+:root {
+  --blue: #09acfe;
+  --red: #cd086f;
+  --white: #e0e0e0;
+  --yellow: #ffd257;
+  --background-1: #121212;
+  --background-2: #000000;
+}
+html {
+  font-size: 10px;
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: var(--background-2);
+  font-family: "Muli  ", sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.container {
+  background-color: var(--background-1);
+  padding: 2rem 4rem;
+  border-radius: 0.5rem;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: var(--blue);
+  padding: 1.5rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  border: 0;
+  border-radius: 0.5rem;
+}
+.btn:focus {
+  outline: 0;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.text {
+  margin-top: 3rem;
+}
+.container h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.container a {
+  text-decoration: none;
+  color: aqua;
+}
+.form-control {
+  position: relative;
+  margin: 2rem 0 4rem;
+  width: 30rem;
+}
+.form-control input {
+  background-color: transparent;
+  border: 2px solid gray;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 1.5rem 0;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-color: var(--blue);
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 20px;
+  color: gray;
+  transition: all 0.5s;
+  letter-spacing: 0.1rem;
+}
+.form-control input:focus ~ .email,
+.form-control input:valid ~ .email {
+  background: var(--background-1);
+  padding: 0 10px;
+  color: var(--blue);
+  font-size: 15px;
+  letter-spacing: 0.2rem;
+  border-left: 2px solid var(--blue);
+  border-right: 2px solid var(--blue);
+  transform: translateY(-25px);
+}
+.form-control input:focus ~ .password,
+.form-control input:valid ~ .password {
+  background: var(--blue);
+  padding: 0 10px;
+  color: var(--background-2);
+  font-size: 15px;
+  letter-spacing: 0.2rem;
+  border-radius: 2px;
+  transform: translateY(-25px);
+}
