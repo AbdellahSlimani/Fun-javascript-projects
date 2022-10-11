@@ -26,3 +26,7 @@ Outputs :<br>
 <a href='https://abdellahslimani.github.io/Fun-javascript-projects/Contend%20Placeholder/index.html'>Contend Placeholder</a>.<br>
 <a href='https://abdellahslimani.github.io/Fun-javascript-projects//Password%20Validation%20Check/index.html'>Password Validation</a>.<br>
 <a href='https://abdellahslimani.github.io/Fun-javascript-projects//Testimonial%20Box/index.html'>Testimonial Box</a>.<br>
+<a href='https://abdellahslimani.github.io/Fun-javascript-projects//Input%Field%Text%Animation/index.html'>Input Field Text Aniamtion</a>.<br>
+<a href='https://abdellahslimani.github.io/Fun-javascript-projects//Testimonial%20Box/index.html'></a>.<br>
+<a href='https://abdellahslimani.github.io/Fun-javascript-projects//Testimonial%20Box/index.html'></a>.<br>
+<a href='https://abdellahslimani.github.io/Fun-javascript-projects//Testimonial%20Box/index.html'></a>.<br>
