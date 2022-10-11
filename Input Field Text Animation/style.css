@@ -73,6 +73,7 @@ body {
   padding: 1.5rem 0;
   font-size: 1.8rem;
   color: #fff;
+  padding-left: 10px;
 }
 .form-control input:focus,
 .form-control input:valid {
