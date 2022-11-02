@@ -1,3 +1,4 @@
+<head><meta name="google-site-verification" content="V4M3bvpiD1TGgS1Zj2GiWT7GR8lq2agzZAyCkJn_qjg" /></head>
 This repo contains completed code samples and assets for <a href='https://github.com/abdellahslimani/Fun-javascript-projects'>My Fun JavaScript Projects</a>.
 
 Outputs :<br>
