@@ -1,0 +1,103 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.container {
+  text-align: center;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Textarea and button styles */
+textarea {
+  width: 500px;
+  height: 400px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#displayText {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #2b2b2b;
+  width: 500px;
+  height: 400px;
+  text-align: left;
+  overflow-y: auto;
+}
+
+/* Layout styles */
+@media (min-width: 768px) {
+  .subContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  textarea {
+    margin-right: 10px;
+  }
+
+  button {
+    margin-right: 10px;
+  }
+
+  #displayText {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    align-items: flex-start;
+  }
+  .subContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #displayText {
+    width: 100%;
+  }
+}
