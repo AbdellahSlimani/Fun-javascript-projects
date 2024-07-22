@@ -1,4 +1,3 @@
-
 This repo contains completed code samples and assets for <a href='https://github.com/abdellahslimani/Fun-javascript-projects'>My Fun JavaScript Projects</a>.
 
 Outputs :<br />
@@ -28,7 +27,8 @@ Outputs :<br />
 <a href='https://abdellahslimani.github.io/Fun-javascript-projects/Password%20Validation%20Check/index.html'>Password Validation</a>.<br>
 <a href='https://abdellahslimani.github.io/Fun-javascript-projects/Testimonial%20Box/index.html'>Testimonial Box</a>.<br>
 <a href='https://abdellahslimani.github.io/Fun-javascript-projects/Input%20Field%20Text%20Animation/index.html'>Input Field Text Aniamtion</a>.<br>
-<a href='https://abdellahslimani.github.io/Fun-javascript-projects/Testimonial%20Box/index.html'></a>.<br>
+<a href='https://abdellahslimani.github.io/Fun-javascript-projects/TextDisplayApp/index.html'>
+Text Display App</a>.<br>
 <a href='https://abdellahslimani.github.io/Fun-javascript-projects/Testimonial%20Box/index.html'></a>.<br>
 <a href='https://abdellahslimani.github.io/Fun-javascript-projects/Testimonial%20Box/index.html'></a>.<br>
 .
